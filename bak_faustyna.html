@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biuro podróży</title>
+    <meta name="description" content="Najlepsze biuro podróży. Z naszym biurem twoja podróż na długo pozostanie w pamięci!">
+    <meta name="keywords" content="Europa, Polska, Biuro Podróży">
+    <meta name="author" content="Faustyna Bąk" />
+    <link rel="shortcut icon" href="Images/logo.jpg" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Styles/styles.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Styles/styl_menu_gorne.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="Styles/all.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="fontello/css/fontello.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+</head>
+
+<body style="margin: 0px">
+
+    <div class="main-container">
+
+        <header>
+            <div class=logo>
+                <p>BIURO PODRÓŻY</p>
+                <img src="Images/logo2.webp" alt="alternative" />
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="menu-gorne">
+                        <li><a class="jeden" href="#sekcja1"><i class="fas fa-home"></i><span class="tekst">Home</span></a></li>
+                        <li><a class="dwa" href="#sekcja2"><i class="fas fa-question"></i><span class="tekst">Europa</span></a></li>
+                        <li><a class="trzy" href="#sekcja4"><i class="fas fa-briefcase"></i><span class="tekst">Afryka</span></a></li>
+                        <li><a class="cztery" href="#sekcja5"><i class="fas fa-address-card"></i><span class="tekst">Oferta</span></a></li>
+                    </ul>
+
+                </nav>
+            </div>
+
+        </header>
+        <script>
+            $(document).ready(function() {
+                $('.jeden').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+
+            $(document).ready(function() {
+                $('.dwa').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.trzy').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.cztery').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.scrollup').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+
+
+            $(document).ready(function() {
+                $(window).resize(function() {
+
+                    if ($(this).width() <= 600) {
+
+                        $('.side-menu-container').hide();
+                        $('.menu-glowne').show();
+
+
+                    } else {
+
+                        $('.side-menu-container').show();
+
+                    }
+
+                });
+            });
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 400) $('.scrollup').fadeIn();
+                else $('.scrollup').fadeOut();
+
+            });
+
+        </script>
+        <div class="side-menu-container">
+
+            <nav class="side-menu">
+                <a href="body" class="scrollup">&#8679;</a>
+
+                <a class="jeden toSec1" href="#sekcja1">
+                    <div><i class="fas fa-home"></i></div>
+                </a>
+                <a class="dwa toSec2" href="#sekcja2">
+                    <div><i class="fas fa-question"></i></div>
+                </a>
+                <a class="trzy toSec3" href="#sekcja4">
+                    <div><i class="fas fa-briefcase"></i></div>
+                </a>
+                <a class="cztery toSec4" href="#sekcja5">
+                    <div><i class="fas fa-address-card"></i></div>
+                </a>
+            </nav>
+        </div>
+
+        <img class="landing" src="Images/fotka.jpeg" alt="Obraz">
+        <p id="landing-text"><q title="Hellen Keller">Życie albo jest śmiałą przygodą, albo niczym.</q> </p>
+
+        <div>
+            <img class="plane" alt="plane" src="Images/samolot.webp">
+            <img class="plane2" alt="plane2" src="Images/plane2.png">
+
+        </div>
+        <hr />
+        <div class="container" id="sekcja1">
+            <h1> Jakie są najpopularniejsze kierunki podróży? </h1>
+            <p>Najpopularniejsze kierunki wakacyjne, które w 2021 roku wybierali Polacy, to Turcja, Grecja, Bułgaria i Egipt - wynika z raportu "Zagraniczne wakacje Polaków 2021" Polskiej Izby Turystyki. Pod uwagę brane były wyjazdy zagraniczne organizowane przez biura podróży.</p>
+            <div class="zdjecie">
+                <img class="zdj" src="https://www.smartpolak.co.uk/img/tanie-wakacje-uk.jpg" alt="widok">
+                <a href="https://www.smartpolak.co.uk/img/tanie-wakacje-uk.jpg">Słoneczne miejsca</a>
+            </div>
+        </div>
+
+        <div class="container" id="sekcja2">
+            <h2>Nie masz pomysłu na wakacje? Zgłoś się do nas!</h2>
+            <p>Oddech od zgiełku wielkiego miasta i pędu życia jest tym, o czym marzysz? Pragniesz ciszy, relaksu i odpoczynku bez względu na pogodę? A może chcesz spędzić noc w unikalnym mikroklimacie z leczniczymi właściwościami dla zdrowia? Mamy coś idealnie dla Ciebie!</p>
+        </div>
+
+
+
+        <div class="container" id="sekcja3">
+            <h3>Europa</h3>
+            <p>Europa – część świata leżąca na półkuli północnej, na pograniczu półkuli wschodniej i zachodniej. Jest uznawana za kontynent, albo za część świata tworzącą wraz z Azją kontynent Eurazję.</p>
+            <div class="zdjecie">
+                <img class="zdj" src="https://bi.im-g.pl/im/1b/bc/19/z26986523IH,Sycylia--widok-na-Etne-i-miasto-Taormina.jpg" alt="widok">
+                <a href="https://www.smartpolak.co.uk/img/tanie-wakacje-uk.jpg">Cudowne krajobrazy</a>
+            </div>
+
+        </div>
+
+        <div class="container" id="sekcja4">
+            <h1>Afryka</h1>
+            <p>Afryka – drugi pod względem wielkości kontynent na Ziemi. Zajmuje 30,37 mln km², czyli ponad 20,3% ogólnej powierzchni lądowej Ziemi. Przechodzą przez niego południk 0°, obydwa zwrotniki i równik. Według danych z 2012 r. Afrykę zamieszkuje ponad miliard ludzi, co stanowi 1/7 ludności świata.</p>
+
+        </div>
+        <div class="container" id="sekcja5">
+            <h1>Najpoplarniejsze miasta w wybranych krajach</h1>
+            <p>Które miasta Europy są najpiękniejsze i oferują najwięcej atrakcji, a spacer ich ulicami jest prawdziwą przyjemnością? W którym europejskim mieście czeka na nas najwięcej zabytków i pięknych miejsc wartych odwiedzenia? Przekonaj się gdzie pojechać i co zwiedzić na Starym Kontynencie. Zobacz nasz subiektywny ranking najpiękniejszych miast Europy i odwiedź je wszystkie w nadchodzącym roku.</p>
+        </div>
+        <div class="container" id="sekcja6">
+
+            <h1>Najczęściej wybierane destynacje w 2021 roku przez Polaków</h1>
+            <p>Szeroki wybór ofert na wakacje 2022, ciekawe hotele i niskie ceny sprawiają, że co raz trudniej zdecydować się, dokąd pojechać na wymarzone wakacje. Grecja zachwyci was różnorodnością plaż i wspaniałych widoków. Turcja to przepiękne miejsce pełne cudów natury i najlepszych hoteli z All Inclusive. Wakacje w Egipcie to znakomity wybór dla miłośników gorącego słońca i nurkowania. Wycieczki do Albanii i Chorwacji zaskoczą Was niesamowitym bałkańskim klimatem, a Bułgaria mnóstwem atrakcji dla rodzin z dziećmi. Przygotowaliśmy dla Was ranking najpopularniejszych kierunków na Lato 2022, więcej znajdziesz <a id="tutaj" target="_blank" href="https://fly.pl/aktualnosci/top-5-najpopularniejsze-kierunki-na-lato-sprawdz-oferte/">tutaj.</a></p>
+
+            <p>Lista zawiera różnego rodzaju atrakcje turystyczne i miasta we Włoszech, aby każdy mógł znaleźć coś dla siebie. Bez względu na to, czy podróżujesz z rodziną, samotnie, z przyjaciółmi lub z drugą połówką, wizyta we Włoszech będzie ekscytującą i niezapomnianą przygodą. Przeczytaj wpis do końca, aby się o tym przekonać! Na koniec załączono także mapę ze wszystkimi wspomnianymi lokalizacjami.</p>
+
+
+            <div class="Lista1">
+                <ul>
+                    <li>Turcja - słoneczny kraj</li>
+                    <li>Grecja - olśniewające światło</li>
+                    <li>Egipt - kraj tajemnic przeszłości</li>
+                    <li>Dominikana - kraj tropikalny</li>
+
+                </ul>
+            </div>
+
+            <div class="Lista1">
+                <ol>
+                    <li>Rzym – wieczne miasto</li>
+                    <li>Wenecja – miasto na wodzie</li>
+                    <li>Florencja – muzeum pod gołym niebem</li>
+                    <li>Sardynia – rajska wyspa</li>
+                </ol>
+
+            </div>
+
+            <div id="Lista2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Polska</th>
+                            <th>Niemcy</th>
+                            <th>Francja</th>
+                            <th>Włochy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Warszawa</td>
+                            <td>Berlin</td>
+                            <td colspan="2">Paryż, Rzym</td>
+                        </tr>
+                        <tr>
+                            <td>Kraków</td>
+                            <td>Frankfurt</td>
+                            <td>Marsylia</td>
+                            <td>Wenecja</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <hr />
+        <div class="stopka">
+            <footer>
+
+                <p id="last"> &copy; 2022, Faustyna Bąk&nbsp;| All rights reserved.</p>
+                <div id="zegar"></div>
+                <script src="zegar.js"> </script>
+                <div class="yt"> <a class="sociallink" target="_blank" href="https://www.youtube.com/"> <i class="demo-icon icon-youtube-squared"></i> </a>
+                </div>
+                <div class="fb"> <a class="sociallink" target="_blank" href="https://www.facebook.com/"> <i class="demo-icon icon-facebook-squared"></i> </a></div>
+                <div class="tw"><a class="sociallink" target="_blank" href="https://twitter.com/"> <i class="demo-icon icon-twitter-squared"></i></a></div>
+                <div class="git"><a class="sociallink" target="_blank" href="https://github.com/faustynabak"> <i class="demo-icon icon-github-squared"></i></a></div>
+
+
+
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

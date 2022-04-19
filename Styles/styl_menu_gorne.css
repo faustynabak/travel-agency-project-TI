@@ -1,0 +1,140 @@
+header {
+    background-color: #B5DEDF;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 6;
+
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    animation-name: logo_animation;
+    animation-duration: 4s;
+    background-color: transparent;
+
+}
+
+.logo:hover {
+    animation-name: logo_rotate;
+    animation-duration: 3s;
+}
+
+ul.menu-gorne > li {
+	display: block;
+	list-style: none;
+}
+
+.menu-gorne >   ul {
+	float: left;
+	width: 100%;
+	padding-left: 10%;
+}
+
+/* The animation code */
+@keyframes logo_animation {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=100);
+    }
+}
+
+@keyframes logo_rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu {
+    width: 70%;
+    position: relative;
+    left: 1;
+}
+
+.menu-gorne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.menu nav a:hover {
+    color: #FFCC00;
+}
+
+nav a:focus {
+    color: black;
+}
+
+nav a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-gorne span {
+        display: none;
+    }
+
+    .logo p {
+        display: none;
+
+    }
+     .sociallink, .yt, .tw, .git, .fb{
+         display: none;
+    }
+   
+}
+
+@media screen and (min-width: 850px) {
+    .logo img {
+        display: none;
+    }
+
+    .menu-gorne i {
+        display: none;
+    }
+
+    
+   
+}
+
+@media screen and (max-width: 850px) and (min-width: 600px) {
+    .logo p {
+        display: none;
+    }
+
+    .menu-gorne i {
+        display: none;
+    }
+    .sociallink, .yt, .tw, .git, .fb{
+         display: none;
+    }
+   
+}
+
+.logo img {
+    height: 100%;
+    width: inherit;
+
+}
+
+.tekst {
+    padding: 20% 80%;
+    background-color: #696969;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
